@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 30px;
+}
+
+.sidenav a {
+    padding: 5px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 37px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 19px;
+
+}
+
+#home {
+    transition: margin-left .5s;
+    background-color: #fff;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 15px;}
+}
+
+</style>
+</head>
+<body background="img\bg.jpg" style="background-repeat: no-repeat; ">
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="1111.html">HomePage</a>
+  <a href="Aguinaldo.html">Emilio Aguinaldo</a>
+  <a href="Quezon.html">Manuel L. Quezon</a>
+  <a href="Laurel.html">Jose P. Laurel</a>
+  <a href="Osmena.html">Sergio Osmena</a>
+  <a href="Roxas.html">Manuel Roxas</a>
+  <a href="Quirino.html">Elpidio Quirino</a>
+  <a href="Magsaysay.html">Ramon Magsaysay</a>
+  <a href="Garcia.html">Carlos P. Garcia</a>
+  <a href="Macapagal.html">Diosdado Macapagal</a>
+  <a href="Marcos.html">Ferdinand Marcos</a>
+  <a href="Aquino.html">Corazon Aquino</a>
+  <a href="Fidel.html">Fidel V. Ramos</a>
+  <a href="Estrada.html">Joseph Estrada</a>
+  <a href="Arroyo.html">Gloria Macapagal-Arroyo</a>
+  <a href="Benigno.html">Benigno Simeon Aquino</a>
+  <a href="Duterte.html">Rodrigo Duterte</a>
+</div>
+
+<div id="main">
+  <span style="font-size:20px;cursor:pointer" onclick="openNav()"><img src="img\0.png" style="width: 30px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jose P. Laurel
+</div>
+ <br><br><br>
+  <div id="home">
+    <img src="img\laurel.jpg" style="width: 340px"></div>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("home").style.marginLeft = "250px";    
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("home").style.marginLeft= "0";
+}
+</script>
+     
+</body>
+</html> 
